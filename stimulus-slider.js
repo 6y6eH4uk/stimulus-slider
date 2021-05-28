@@ -36,3 +36,5 @@ if (window.stimulusApplication) {
 }
 
 application.register('slider', SliderController)
+
+window.stimulusApplication = application
