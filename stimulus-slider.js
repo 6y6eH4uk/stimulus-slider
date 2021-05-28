@@ -10,7 +10,7 @@ class SliderController extends Stimulus.Controller {
 
     static classes = ['activeDot']
 
-    initialize() {
+    connect() {
         $(this.sliderTarget).slick({
             slidesToShow: this.slidesToShowValue,
             slidesToScroll: this.slidesToScrollValue,
