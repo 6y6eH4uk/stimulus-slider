@@ -50,14 +50,16 @@ class SliderController extends Stimulus.Controller {
     }
 }
 
-let application;
+(function() {
+	let application;
 
-if (window.stimulusApplication) {
-    application = window.stimulusApplication
-} else {
-    application = Stimulus.Application.start()
-}
+    if (window.stimulusApplication) {
+        application = window.stimulusApplication
+    } else {
+        application = Stimulus.Application.start()
+    }
 
-application.register('slider', SliderController)
+    application.register('slider', SliderController)
 
-window.stimulusApplication = application
+    window.stimulusApplication = application
+})()
